@@ -9,14 +9,14 @@ from pathlib import Path
 from typing import List
 
 
-LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]+\)")
+LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 MARKUP_RE = re.compile(r"[*_`#]")
 
 
 def markdown_lines(markdown: str) -> List[str]:
     result = []
     for line in markdown.splitlines():
-        line = LINK_RE.sub(r"\1", line)
+        line = LINK_RE.sub(r"\1 (\2)", line)
         line = MARKUP_RE.sub("", line).strip()
         if not line:
             result.append("")
