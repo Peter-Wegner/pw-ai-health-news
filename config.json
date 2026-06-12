@@ -1,0 +1,40 @@
+{
+  "minimum_score": 5,
+  "feeds": [
+    {
+      "name": "Google News: Health AI",
+      "url": "https://news.google.com/rss/search?q=%28healthcare+OR+medical+OR+clinical%29+%28AI+OR+artificial+intelligence%29&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Google News: FDA Medical AI",
+      "url": "https://news.google.com/rss/search?q=FDA+%28AI+OR+artificial+intelligence%29+medical&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Google News: Health AI Europe",
+      "url": "https://news.google.com/rss/search?q=%28Gesundheit+OR+Medizin%29+%28KI+OR+k%C3%BCnstliche+Intelligenz%29&hl=de&gl=DE&ceid=DE%3Ade"
+    }
+  ],
+  "keywords": {
+    "artificial intelligence": 3,
+    " AI ": 3,
+    "machine learning": 3,
+    "generative AI": 4,
+    "medical": 2,
+    "healthcare": 2,
+    "clinical": 3,
+    "patient": 2,
+    "diagnosis": 3,
+    "drug discovery": 4,
+    "FDA": 4,
+    "WHO": 3,
+    "Gesundheit": 2,
+    "Medizin": 2,
+    "künstliche Intelligenz": 3,
+    " KI ": 3
+  },
+  "negative_keywords": {
+    "stock price": 3,
+    "buy this stock": 5,
+    "sponsored": 4
+  }
+}
